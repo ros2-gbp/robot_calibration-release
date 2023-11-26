@@ -1,0 +1,12 @@
+Source: ros-humble-robot-calibration
+Section: misc
+Priority: optional
+Maintainer: Michael Ferguson <mike@vanadiumlabs.com>
+Build-Depends: debhelper (>= 9.0.0), libboost-filesystem-dev, libceres-dev, libeigen3-dev, libgflags-dev, liborocos-kdl-dev, libprotobuf-dev, libprotoc-dev, libsuitesparse-dev, libtinyxml2-dev, libyaml-cpp-dev, protobuf-compiler, ros-humble-ament-cmake, ros-humble-ament-cmake-gtest <!nocheck>, ros-humble-camera-calibration-parsers, ros-humble-control-msgs, ros-humble-cv-bridge, ros-humble-geometric-shapes, ros-humble-geometry-msgs, ros-humble-kdl-parser, ros-humble-launch <!nocheck>, ros-humble-launch-ros <!nocheck>, ros-humble-launch-testing <!nocheck>, ros-humble-moveit-msgs, ros-humble-nav-msgs, ros-humble-pluginlib, ros-humble-rclcpp, ros-humble-rclcpp-action, ros-humble-robot-calibration-msgs, ros-humble-rosbag2-cpp, ros-humble-sensor-msgs, ros-humble-std-msgs, ros-humble-tf2-geometry-msgs, ros-humble-tf2-ros, ros-humble-tinyxml2-vendor, ros-humble-visualization-msgs, ros-humble-ros-workspace
+Homepage: http://ros.org/wiki/robot_calibration
+Standards-Version: 3.9.2
+
+Package: ros-humble-robot-calibration
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libceres-dev, libgflags-dev, liborocos-kdl-dev, libprotobuf-dev, libprotoc-dev, libsuitesparse-dev, libtinyxml2-dev, libyaml-cpp-dev, protobuf-compiler, ros-humble-camera-calibration-parsers, ros-humble-control-msgs, ros-humble-cv-bridge, ros-humble-geometric-shapes, ros-humble-geometry-msgs, ros-humble-kdl-parser, ros-humble-moveit-msgs, ros-humble-nav-msgs, ros-humble-pluginlib, ros-humble-rclcpp, ros-humble-rclcpp-action, ros-humble-robot-calibration-msgs, ros-humble-rosbag2-cpp, ros-humble-sensor-msgs, ros-humble-std-msgs, ros-humble-tf2-geometry-msgs, ros-humble-tf2-ros, ros-humble-tinyxml2-vendor, ros-humble-visualization-msgs, ros-humble-ros-workspace
+Description: Calibrate a Robot
