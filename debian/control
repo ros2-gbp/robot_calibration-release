@@ -1,0 +1,12 @@
+Source: ros-iron-robot-calibration
+Section: misc
+Priority: optional
+Maintainer: Michael Ferguson <mike@vanadiumlabs.com>
+Build-Depends: debhelper (>= 9.0.0), libboost-filesystem-dev, libceres-dev, libeigen3-dev, libgflags-dev, liborocos-kdl-dev, libprotobuf-dev, libprotoc-dev, libsuitesparse-dev, libtinyxml2-dev, libyaml-cpp-dev, protobuf-compiler, ros-iron-ament-cmake, ros-iron-ament-cmake-gtest <!nocheck>, ros-iron-camera-calibration-parsers, ros-iron-control-msgs, ros-iron-cv-bridge, ros-iron-geometric-shapes, ros-iron-geometry-msgs, ros-iron-kdl-parser, ros-iron-launch <!nocheck>, ros-iron-launch-ros <!nocheck>, ros-iron-launch-testing <!nocheck>, ros-iron-moveit-msgs, ros-iron-nav-msgs, ros-iron-pluginlib, ros-iron-rclcpp, ros-iron-rclcpp-action, ros-iron-robot-calibration-msgs, ros-iron-rosbag2-cpp, ros-iron-sensor-msgs, ros-iron-std-msgs, ros-iron-tf2-geometry-msgs, ros-iron-tf2-ros, ros-iron-tinyxml2-vendor, ros-iron-visualization-msgs, ros-iron-ros-workspace
+Homepage: http://ros.org/wiki/robot_calibration
+Standards-Version: 3.9.2
+
+Package: ros-iron-robot-calibration
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libceres-dev, libgflags-dev, liborocos-kdl-dev, libprotobuf-dev, libprotoc-dev, libsuitesparse-dev, libtinyxml2-dev, libyaml-cpp-dev, protobuf-compiler, ros-iron-camera-calibration-parsers, ros-iron-control-msgs, ros-iron-cv-bridge, ros-iron-geometric-shapes, ros-iron-geometry-msgs, ros-iron-kdl-parser, ros-iron-moveit-msgs, ros-iron-nav-msgs, ros-iron-pluginlib, ros-iron-rclcpp, ros-iron-rclcpp-action, ros-iron-robot-calibration-msgs, ros-iron-rosbag2-cpp, ros-iron-sensor-msgs, ros-iron-std-msgs, ros-iron-tf2-geometry-msgs, ros-iron-tf2-ros, ros-iron-tinyxml2-vendor, ros-iron-visualization-msgs, ros-iron-ros-workspace
+Description: Calibrate a Robot
