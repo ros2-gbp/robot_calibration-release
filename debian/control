@@ -1,0 +1,12 @@
+Source: ros-rolling-robot-calibration
+Section: misc
+Priority: optional
+Maintainer: Michael Ferguson <mike@vanadiumlabs.com>
+Build-Depends: debhelper (>= 9.0.0), ament-cmake, ament-cmake-googletest <!nocheck>, camera-calibration-parsers-tools, libboost-filesystem-dev, libcamera-calibration-parsers-dev, libceres-dev, libcv-bridge-dev, libeigen3-dev, libgeometric-shapes-dev, libgeometry-msgs-dev, libgflags-dev, libkdl-parser-dev, libnav-msgs-dev, liborocos-kdl-dev, libprotobuf-dev, libprotoc-dev, libsensor-msgs-dev, libstd-msgs-dev, libsuitesparse-dev, libtf2-geometry-msgs-dev, libtf2-ros-dev, libtinyxml2-dev, libvisualization-msgs-dev, libyaml-cpp-dev, pluginlib-dev, protobuf-compiler, python3-camera-calibration-parsers, python3-cv-bridge, python3-geometry-msgs, python3-nav-msgs, python3-sensor-msgs, python3-std-msgs, python3-tf2-geometry-msgs, python3-tf2-ros, python3-visualization-msgs, ros-geometry-msgs, ros-nav-msgs, ros-rolling-control-msgs, ros-rolling-launch <!nocheck>, ros-rolling-launch-ros <!nocheck>, ros-rolling-launch-testing <!nocheck>, ros-rolling-moveit-msgs, ros-rolling-rclcpp, ros-rolling-rclcpp-action, ros-rolling-robot-calibration-msgs, ros-rolling-rosbag2-cpp, ros-rolling-tinyxml2-vendor, ros-sensor-msgs, ros-std-msgs, ros-visualization-msgs, ros-rolling-ros-workspace
+Homepage: http://ros.org/wiki/robot_calibration
+Standards-Version: 3.9.2
+
+Package: ros-rolling-robot-calibration
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, camera-calibration-parsers-tools, libcamera-calibration-parsers-dev, libceres-dev, libcv-bridge-dev, libgeometric-shapes-dev, libgeometry-msgs-dev, libgflags-dev, libkdl-parser-dev, libnav-msgs-dev, liborocos-kdl-dev, libprotobuf-dev, libprotoc-dev, libsensor-msgs-dev, libstd-msgs-dev, libsuitesparse-dev, libtf2-geometry-msgs-dev, libtf2-ros-dev, libtinyxml2-dev, libvisualization-msgs-dev, libyaml-cpp-dev, pluginlib-dev, protobuf-compiler, python3-camera-calibration-parsers, python3-cv-bridge, python3-geometry-msgs, python3-nav-msgs, python3-sensor-msgs, python3-std-msgs, python3-tf2-geometry-msgs, python3-tf2-ros, python3-visualization-msgs, ros-geometry-msgs, ros-nav-msgs, ros-rolling-control-msgs, ros-rolling-moveit-msgs, ros-rolling-rclcpp, ros-rolling-rclcpp-action, ros-rolling-robot-calibration-msgs, ros-rolling-rosbag2-cpp, ros-rolling-tinyxml2-vendor, ros-sensor-msgs, ros-std-msgs, ros-visualization-msgs, ros-rolling-ros-workspace
+Description: Calibrate a Robot
