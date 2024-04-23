@@ -2,6 +2,13 @@
 Changelog for package robot_calibration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.9.0 (2024-04-23)
+------------------
+* deprecated header has been removed for j-turtle (`#162 <https://github.com/mikeferguson/robot_calibration/issues/162>`_)
+  this branch now only supports Iron and later, update CI to reflect that
+* update checkerboard comment (`#160 <https://github.com/mikeferguson/robot_calibration/issues/160>`_)
+* Contributors: Michael Ferguson
+
 0.8.1 (2023-11-25)
 ------------------
 * update to tinyxml2 (`#159 <https://github.com/mikeferguson/robot_calibration/issues/159>`_)
