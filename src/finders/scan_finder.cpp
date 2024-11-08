@@ -21,7 +21,6 @@
 #include <math.h>
 #include <robot_calibration/finders/scan_finder.hpp>
 #include <sensor_msgs/point_cloud2_iterator.hpp>
-#include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
 
 static const rclcpp::Logger LOGGER = rclcpp::get_logger("scan_finder");
 
@@ -51,10 +50,13 @@ bool ScanFinder::init(const std::string& name,
   // We subscribe to a LaserScan
   std::string topic_name;
   topic_name = node->declare_parameter<std::string>(name + ".topic", name + "/scan");
+  rclcpp::SubscriptionOptions options;
+  options.qos_overriding_options = rclcpp::QosOverridingOptions::with_default_policies();
   subscriber_ = node->create_subscription<sensor_msgs::msg::LaserScan>(
     topic_name,
-    rclcpp::QoS(1).best_effort().keep_last(1),
-    std::bind(&ScanFinder::scanCallback, this, std::placeholders::_1));
+    rclcpp::QoS(1).best_effort(),
+    std::bind(&ScanFinder::scanCallback, this, std::placeholders::_1),
+    options);
 
   // Name of the sensor model that will be used during optimization
   laser_sensor_name_ = node->declare_parameter<std::string>(name + ".sensor_name", "laser");
