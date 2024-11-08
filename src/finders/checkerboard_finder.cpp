@@ -52,13 +52,10 @@ bool CheckerboardFinder<T>::init(const std::string& name,
   // Setup subscriber
   std::string topic_name;
   topic_name = node->declare_parameter<std::string>(name + ".topic", name + "/points");
-  rclcpp::SubscriptionOptions options;
-  options.qos_overriding_options = rclcpp::QosOverridingOptions::with_default_policies();
   subscriber_ = node->create_subscription<T>(
     topic_name,
     rclcpp::QoS(1).best_effort().keep_last(1),
-    std::bind(&CheckerboardFinder::cameraCallback, this, std::placeholders::_1),
-    options);
+    std::bind(&CheckerboardFinder::cameraCallback, this, std::placeholders::_1));
 
   // Size of checkerboard
   points_x_ = node->declare_parameter<int>(name + ".points_x", 5);
