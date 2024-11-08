@@ -24,7 +24,6 @@
 #include <robot_calibration/finders/plane_finder.hpp>
 #include <robot_calibration/util/eigen_geometry.hpp>
 #include <sensor_msgs/point_cloud2_iterator.hpp>
-#include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
 
 static const rclcpp::Logger LOGGER = rclcpp::get_logger("plane_finder");
 
@@ -106,10 +105,13 @@ bool PlaneFinder::init(const std::string& name,
   // We subscribe to a PointCloud2
   std::string topic_name =
     node->declare_parameter<std::string>(name + ".topic", name + "/points");
+  rclcpp::SubscriptionOptions options;
+  options.qos_overriding_options = rclcpp::QosOverridingOptions::with_default_policies();
   subscriber_ = node->create_subscription<sensor_msgs::msg::PointCloud2>(
     topic_name,
-    rclcpp::QoS(1).best_effort().keep_last(1),
-    std::bind(&PlaneFinder::cameraCallback, this, std::placeholders::_1));
+    rclcpp::QoS(1).best_effort(),
+    std::bind(&PlaneFinder::cameraCallback, this, std::placeholders::_1),
+    options);
 
   // Name of the sensor model that will be used during optimization
   plane_sensor_name_ = node->declare_parameter<std::string>(name + ".camera_sensor_name", "camera");
