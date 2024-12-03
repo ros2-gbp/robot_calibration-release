@@ -1,0 +1,12 @@
+Source: ros-jazzy-robot-calibration
+Section: misc
+Priority: optional
+Maintainer: Michael Ferguson <mike@vanadiumlabs.com>
+Build-Depends: debhelper (>= 9.0.0), libboost-filesystem-dev, libceres-dev, libeigen3-dev, libfcl-dev, libgflags-dev, liborocos-kdl-dev, libprotobuf-dev, libprotoc-dev, libsuitesparse-dev, libtinyxml2-dev, libyaml-cpp-dev, protobuf-compiler, ros-jazzy-ament-cmake, ros-jazzy-ament-cmake-gtest <!nocheck>, ros-jazzy-camera-calibration-parsers, ros-jazzy-control-msgs, ros-jazzy-cv-bridge, ros-jazzy-geometric-shapes, ros-jazzy-geometry-msgs, ros-jazzy-kdl-parser, ros-jazzy-launch <!nocheck>, ros-jazzy-launch-ros <!nocheck>, ros-jazzy-launch-testing <!nocheck>, ros-jazzy-moveit-msgs, ros-jazzy-nav-msgs, ros-jazzy-pluginlib, ros-jazzy-rclcpp, ros-jazzy-rclcpp-action, ros-jazzy-robot-calibration-msgs, ros-jazzy-rosbag2-cpp, ros-jazzy-sensor-msgs, ros-jazzy-std-msgs, ros-jazzy-tf2-geometry-msgs, ros-jazzy-tf2-ros, ros-jazzy-tinyxml2-vendor, ros-jazzy-visualization-msgs, ros-jazzy-ros-workspace
+Homepage: http://ros.org/wiki/robot_calibration
+Standards-Version: 3.9.2
+
+Package: ros-jazzy-robot-calibration
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libceres-dev, libfcl-dev, libgflags-dev, liborocos-kdl-dev, libprotobuf-dev, libprotoc-dev, libsuitesparse-dev, libtinyxml2-dev, libyaml-cpp-dev, protobuf-compiler, ros-jazzy-camera-calibration-parsers, ros-jazzy-control-msgs, ros-jazzy-cv-bridge, ros-jazzy-geometric-shapes, ros-jazzy-geometry-msgs, ros-jazzy-kdl-parser, ros-jazzy-moveit-msgs, ros-jazzy-nav-msgs, ros-jazzy-pluginlib, ros-jazzy-rclcpp, ros-jazzy-rclcpp-action, ros-jazzy-robot-calibration-msgs, ros-jazzy-rosbag2-cpp, ros-jazzy-sensor-msgs, ros-jazzy-std-msgs, ros-jazzy-tf2-geometry-msgs, ros-jazzy-tf2-ros, ros-jazzy-tinyxml2-vendor, ros-jazzy-visualization-msgs, ros-jazzy-ros-workspace
+Description: Calibrate a Robot
