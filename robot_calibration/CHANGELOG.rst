@@ -2,6 +2,11 @@
 Changelog for package robot_calibration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.9.3 (2024-12-03)
+------------------
+* temporarily depend on libfcl-dev (`#185 <https://github.com/mikeferguson/robot_calibration/issues/185>`_)
+* Contributors: Michael Ferguson
+
 0.9.2 (2024-11-08)
 ------------------
 * include tf2_geometry_msgs earlier to avoid missing symbols (`#182 <https://github.com/mikeferguson/robot_calibration/issues/182>`_)
