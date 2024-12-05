@@ -2,7 +2,7 @@
 <package format="3">
 
   <name>robot_calibration</name>
-  <version>0.8.2</version>
+  <version>0.8.3</version>
   <description>
     Calibrate a Robot
   </description>
@@ -23,6 +23,7 @@
   <depend>kdl_parser</depend>
   <depend>moveit_msgs</depend>
   <depend>nav_msgs</depend>
+  <depend>libfcl-dev</depend>
   <depend>liborocos-kdl-dev</depend>
   <depend>pluginlib</depend>
   <depend>rclcpp</depend>
