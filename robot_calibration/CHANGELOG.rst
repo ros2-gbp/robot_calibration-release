@@ -2,27 +2,15 @@
 Changelog for package robot_calibration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.9.3 (2024-12-03)
+0.8.3 (2024-12-05)
 ------------------
-* temporarily depend on libfcl-dev (`#185 <https://github.com/mikeferguson/robot_calibration/issues/185>`_)
+* temporarily depend on libfcl-dev (`#187 <https://github.com/mikeferguson/robot_calibration/issues/187>`_)
+  The new release of geometric_shapes only exec_depends on libfcl, which appears to cause linking issues in building the Debians.
 * Contributors: Michael Ferguson
 
-0.9.2 (2024-11-08)
+0.8.2 (2024-11-08)
 ------------------
-* include tf2_geometry_msgs earlier to avoid missing symbols (`#182 <https://github.com/mikeferguson/robot_calibration/issues/182>`_)
-* port capture_poses script to ROS 2, document (`#181 <https://github.com/mikeferguson/robot_calibration/issues/181>`_)
-* improve parsing of xyz and rpy fields (`#177 <https://github.com/mikeferguson/robot_calibration/issues/177>`_)
-  * don't segfault if xyz or rpy missing
-  * remove extra spaces in xyz/rpy fields
-* urdf/model.h -> urdf/model.hpp (`#175 <https://github.com/mikeferguson/robot_calibration/issues/175>`_)
-* Contributors: Michael Ferguson
-
-0.9.1 (2024-09-26)
-------------------
-* add qos overrides for finders (`#174 <https://github.com/mikeferguson/robot_calibration/issues/174>`_)
-  this is primarily a workaround for the issues seen
-  in jazzy where large topics do not come through
-  over best effort subscribers.
+* include tf2_geometry_msgs earlier to avoid missing symbols (backport `#182 <https://github.com/mikeferguson/robot_calibration/issues/182>`_) (`#183 <https://github.com/mikeferguson/robot_calibration/issues/183>`_)
 * do not run calibration if no feature finders (`#167 <https://github.com/mikeferguson/robot_calibration/issues/167>`_)
   due to misconfiguration (for instance, camera_info topic
   is wrong) the finders may not initialize but the robot
@@ -30,12 +18,6 @@ Changelog for package robot_calibration
   all of them, and then have no observations in the
   output bagfile
 * remove redundant keep_last() (`#166 <https://github.com/mikeferguson/robot_calibration/issues/166>`_)
-* Contributors: Michael Ferguson
-
-0.9.0 (2024-04-23)
-------------------
-* deprecated header has been removed for j-turtle (`#162 <https://github.com/mikeferguson/robot_calibration/issues/162>`_)
-  this branch now only supports Iron and later, update CI to reflect that
 * update checkerboard comment (`#160 <https://github.com/mikeferguson/robot_calibration/issues/160>`_)
 * Contributors: Michael Ferguson
 
