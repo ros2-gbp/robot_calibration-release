@@ -1,0 +1,12 @@
+Source: ros-kilted-robot-calibration
+Section: misc
+Priority: optional
+Maintainer: Michael Ferguson <mike@vanadiumlabs.com>
+Build-Depends: debhelper (>= 9.0.0), libboost-filesystem-dev, libceres-dev, libeigen3-dev, libgflags-dev, liborocos-kdl-dev, libprotobuf-dev, libprotoc-dev, libsuitesparse-dev, libtinyxml2-dev, libyaml-cpp-dev, protobuf-compiler, ros-kilted-ament-cmake, ros-kilted-ament-cmake-gtest <!nocheck>, ros-kilted-camera-calibration-parsers, ros-kilted-control-msgs, ros-kilted-cv-bridge, ros-kilted-geometric-shapes, ros-kilted-geometry-msgs, ros-kilted-kdl-parser, ros-kilted-launch <!nocheck>, ros-kilted-launch-ros <!nocheck>, ros-kilted-launch-testing <!nocheck>, ros-kilted-moveit-msgs, ros-kilted-nav-msgs, ros-kilted-pluginlib, ros-kilted-rclcpp, ros-kilted-rclcpp-action, ros-kilted-robot-calibration-msgs, ros-kilted-rosbag2-cpp, ros-kilted-sensor-msgs, ros-kilted-std-msgs, ros-kilted-tf2-geometry-msgs, ros-kilted-tf2-ros, ros-kilted-tinyxml2-vendor, ros-kilted-visualization-msgs, ros-kilted-ros-workspace
+Homepage: http://ros.org/wiki/robot_calibration
+Standards-Version: 3.9.2
+
+Package: ros-kilted-robot-calibration
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libceres-dev, libgflags-dev, liborocos-kdl-dev, libprotobuf-dev, libprotoc-dev, libsuitesparse-dev, libtinyxml2-dev, libyaml-cpp-dev, protobuf-compiler, ros-kilted-camera-calibration-parsers, ros-kilted-control-msgs, ros-kilted-cv-bridge, ros-kilted-geometric-shapes, ros-kilted-geometry-msgs, ros-kilted-kdl-parser, ros-kilted-moveit-msgs, ros-kilted-nav-msgs, ros-kilted-pluginlib, ros-kilted-rclcpp, ros-kilted-rclcpp-action, ros-kilted-robot-calibration-msgs, ros-kilted-rosbag2-cpp, ros-kilted-sensor-msgs, ros-kilted-std-msgs, ros-kilted-tf2-geometry-msgs, ros-kilted-tf2-ros, ros-kilted-tinyxml2-vendor, ros-kilted-visualization-msgs, ros-kilted-ros-workspace
+Description: Calibrate a Robot
