@@ -1,3 +1,28 @@
+## robot_calibration (rolling) - 0.10.1-1
+
+The packages in the `robot_calibration` repository were released into the `rolling` distro by running `/usr/bin/bloom-release -r rolling -t rolling robot_calibration` on `Mon, 26 Jan 2026 19:25:16 -0000`
+
+These packages were released:
+- `robot_calibration`
+- `robot_calibration_msgs`
+
+Version of package(s) in repository `robot_calibration`:
+
+- upstream repository: https://github.com/mikeferguson/robot_calibration.git
+- release repository: https://github.com/ros2-gbp/robot_calibration-release.git
+- rosdistro version: `0.10.0-1`
+- old version: `0.10.0-1`
+- new version: `0.10.1-1`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.25.1`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## robot_calibration (kilted) - 0.10.1-1
 
 The packages in the `robot_calibration` repository were released into the `kilted` distro by running `/usr/bin/bloom-release -r kilted -t kilted robot_calibration` on `Mon, 26 Jan 2026 19:22:02 -0000`
