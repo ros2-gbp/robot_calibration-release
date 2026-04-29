@@ -1,0 +1,12 @@
+Source: ros-lyrical-robot-calibration
+Section: misc
+Priority: optional
+Maintainer: Michael Ferguson <mike@vanadiumlabs.com>
+Build-Depends: debhelper (>= 9.0.0), libboost-filesystem-dev, libceres-dev, libeigen3-dev, libgflags-dev, liborocos-kdl-dev, libprotobuf-dev, libprotoc-dev, libsuitesparse-dev, libtinyxml2-dev, libyaml-cpp-dev, protobuf-compiler, ros-lyrical-ament-cmake, ros-lyrical-ament-cmake-gtest <!nocheck>, ros-lyrical-camera-calibration-parsers, ros-lyrical-control-msgs, ros-lyrical-cv-bridge, ros-lyrical-geometric-shapes, ros-lyrical-geometry-msgs, ros-lyrical-kdl-parser, ros-lyrical-launch <!nocheck>, ros-lyrical-launch-ros <!nocheck>, ros-lyrical-launch-testing <!nocheck>, ros-lyrical-moveit-msgs, ros-lyrical-nav-msgs, ros-lyrical-pluginlib, ros-lyrical-rclcpp, ros-lyrical-rclcpp-action, ros-lyrical-robot-calibration-msgs, ros-lyrical-rosbag2-cpp, ros-lyrical-sensor-msgs, ros-lyrical-std-msgs, ros-lyrical-tf2-geometry-msgs, ros-lyrical-tf2-ros, ros-lyrical-tinyxml2-vendor, ros-lyrical-visualization-msgs, ros-lyrical-ros-workspace
+Homepage: http://ros.org/wiki/robot_calibration
+Standards-Version: 3.9.2
+
+Package: ros-lyrical-robot-calibration
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libceres-dev, libgflags-dev, liborocos-kdl-dev, libprotobuf-dev, libprotoc-dev, libsuitesparse-dev, libtinyxml2-dev, libyaml-cpp-dev, protobuf-compiler, ros-lyrical-camera-calibration-parsers, ros-lyrical-control-msgs, ros-lyrical-cv-bridge, ros-lyrical-geometric-shapes, ros-lyrical-geometry-msgs, ros-lyrical-kdl-parser, ros-lyrical-moveit-msgs, ros-lyrical-nav-msgs, ros-lyrical-pluginlib, ros-lyrical-rclcpp, ros-lyrical-rclcpp-action, ros-lyrical-robot-calibration-msgs, ros-lyrical-rosbag2-cpp, ros-lyrical-sensor-msgs, ros-lyrical-std-msgs, ros-lyrical-tf2-geometry-msgs, ros-lyrical-tf2-ros, ros-lyrical-tinyxml2-vendor, ros-lyrical-visualization-msgs, ros-lyrical-ros-workspace
+Description: Calibrate a Robot
