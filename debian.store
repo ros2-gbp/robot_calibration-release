@@ -1,1 +1,1 @@
-{"base": "edca3a62121d", "parent": "debian/rolling/robot_calibration_msgs", "previous": "8aeebc6f9469", "trim": "", "trimbase": ""}
+{"base": "38f1a05b78d1", "parent": "debian/lyrical/robot_calibration_msgs", "previous": "5c8a663ac38f", "trim": "", "trimbase": ""}
